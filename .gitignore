@@ -30,3 +30,6 @@ test/fixtures/**/.fbkpm
 .pnp
 /packages/lockfile/index.js
 .vscode/
+output
+*.bridgetown-cache
+*.bridgetown-webpack

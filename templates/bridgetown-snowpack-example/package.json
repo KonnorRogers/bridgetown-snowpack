@@ -12,5 +12,8 @@
   },
   "devDependencies": {
     "snowpack": "^2.6.4"
+  },
+  "dependencies": {
+    "bridgetown-snowpack-base": "^0.0.2"
   }
 }
