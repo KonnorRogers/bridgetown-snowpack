@@ -1,3 +1,3 @@
-import "../styles/index.scss"
+import "../styles/index.scss";
 
-console.info("Bridgetown is loaded!")
+console.info("Bridgetown is loaded!");
