@@ -1,7 +1,7 @@
 {
   "extends": "bridgetown-snowpack-base",
   "scripts": {
-    "run:scss": "sass frontend/styles:frontend/styles --no-source-map",
+    "run:scss": "sass frontend/styles --no-source-map",
     "run:scss::watch": "$1 --watch"
   },
   "plugins": []
