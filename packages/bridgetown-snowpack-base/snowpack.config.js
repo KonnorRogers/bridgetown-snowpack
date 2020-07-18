@@ -1,8 +1,3 @@
-const fs = require("fs");
-const path = require("path");
-
-const cwd = process.cwd();
-
 const scripts = {
   "mount:frontend": "mount frontend --to /_frontend_",
   "mount:output": "mount output --to /",
