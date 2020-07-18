@@ -1,0 +1,14 @@
+body {
+  background: #fafafa;
+  color: #444;
+  font-family: sans-serif;
+}
+
+h1, nav, footer {
+  text-align: center;
+}
+
+main {
+  margin: 4rem auto;
+  max-width: 60rem;
+}

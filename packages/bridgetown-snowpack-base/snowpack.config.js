@@ -10,17 +10,19 @@ const scripts = {
   "run:bridgetown::watch": "$1 --watch",
 };
 
-// if (
-//   fs.existsSync(path.join(cwd, "babel.config.json")) ||
-//   fs.existsSync(path.join(cwd, "babel.config.js")) ||
-//   fs.existsSync(path.join(cwd, "babel.config.cjs")) ||
-//   fs.existsSync(path.join(cwd, "babel.config.mjs"))
-// ) {
-//   scripts[buildId] = "babel --filename $FILE";
-// } else {
-//   const bundledConfig = path.join(__dirname, "babel.config.json");
-//   scripts[buildId] = `babel --filename $FILE --config-file ${bundledConfig}`;
-// }
+const buildId = "build:js"
+
+if (
+  fs.existsSync(path.join(cwd, "babel.config.json")) ||
+  fs.existsSync(path.join(cwd, "babel.config.js")) ||
+  fs.existsSync(path.join(cwd, "babel.config.cjs")) ||
+  fs.existsSync(path.join(cwd, "babel.config.mjs"))
+) {
+  scripts[buildId] = "babel --filename $FILE";
+} else {
+  const bundledConfig = path.join(__dirname, "babel.config.json");
+  scripts[buildId] = `babel --filename $FILE --config-file ${bundledConfig}`;
+}
 
 module.exports = {
   scripts,
