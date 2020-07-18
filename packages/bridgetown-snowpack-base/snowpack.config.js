@@ -38,5 +38,5 @@ module.exports = {
   proxy: {
     "0.0.0.0:4000": "0.0.0.0:4000",
   },
-  plugins: ["@snowpack/plugin-dotenv", "@snowpack/plugin-babel"],
+  plugins: ["@snowpack/plugin-dotenv", "@snowpack/plugin-babel", "@snowpack/plugin-parcel"],
 };
