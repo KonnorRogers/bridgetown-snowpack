@@ -1,0 +1,13 @@
+{
+  "name": "workspace",
+  "npmClient": "yarn",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "templates/*"
+  ],
+  "scripts": {
+  },
+  "devDependencies": {
+  }
+}
