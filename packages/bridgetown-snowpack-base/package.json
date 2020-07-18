@@ -1,6 +1,6 @@
 {
   "name": "bridgetown-snowpack-base",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "snowpack.config.js",
   "repository": "https://github.com/paramagicdev/brdigetown-snowpack.git",
   "publishConfig": {
