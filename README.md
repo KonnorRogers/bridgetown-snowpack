@@ -19,7 +19,7 @@ bundle exec bridgetown apply https://github.com/ParamagicDev/bridgetown-snowpack
 ## How I use it
 
 ```bash
-OPTS="--skip-yarn" bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ParamagicDev/bridgetown-automation-docker-compose/master/installer.sh)"
+bin/bash -c "curl -fsSL https://raw.githubusercontent.com/ParamagicDev/bridgetown-automation-docker-compose/master/installer.sh | bash -s --skip-yarn" 
 
 cd <project>
 source docker.env
