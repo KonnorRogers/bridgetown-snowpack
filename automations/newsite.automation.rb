@@ -51,4 +51,4 @@ end
 
 remove_index_scss
 remove_webpack_files
-remove_webpack_files
+remove_webpack_packages
