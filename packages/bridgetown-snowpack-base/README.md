@@ -15,7 +15,7 @@ Then, in your `snowpack.config.json` file, make sure to extend this plugin.
 
 ```json
 {
-  "extend": "bridgetown-snowpack-base"
+  "extends": "bridgetown-snowpack-base"
 }
 ```
 
