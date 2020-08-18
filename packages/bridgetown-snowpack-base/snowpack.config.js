@@ -5,22 +5,48 @@ const scripts = {
   "run:bridgetown::watch": "$1 --watch",
 };
 
-module.exports = {
-  scripts,
-  installOptions: {
-    NODE_ENV: true,
-  },
-  devOptions: {
+const mount = {
+}
+
+const proxy = {
+  "0.0.0.0:4000": "0.0.0.0:4000",
+}
+
+const plugins = [
+  [
+    "@snowpack/plugin-run-script",
+    {
+      "cmd": "bundle exec bridgetown build",
+      "watch": "$1 --watch"
+    }
+  ]
+]
+
+const installOptions = {
+}
+
+const devOptions = {
     // Default port of bridgetown
     port: 4000,
     open: "none",
     // Default output directory of Bridgetown
     out: "output",
-  },
+}
+
+
+const buildOptions = {
+}
+
+
+
+module.exports = {
+  mount,
+  proxy,
+  plugins,
+  installOptions,
+  devOptions,
+  buildOptions
   // Account for users using Docker
-  proxy: {
-    "0.0.0.0:4000": "0.0.0.0:4000",
-  },
   plugins: [
     "@snowpack/plugin-dotenv",
     "@snowpack/plugin-babel",
