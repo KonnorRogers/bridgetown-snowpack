@@ -1,14 +1,10 @@
-const scripts = {
-  "mount:frontend": "mount frontend --to /_frontend_",
-  "mount:output": "mount output --to /",
-  "run:bridgetown": "bundle exec bridgetown build",
-  "run:bridgetown::watch": "$1 --watch",
-};
-
 const mount = {
+  frontend: "/_frontend_",
+  output: "/"
 }
 
 const proxy = {
+  // Account for users using Docker
   "0.0.0.0:4000": "0.0.0.0:4000",
 }
 
@@ -19,25 +15,26 @@ const plugins = [
       "cmd": "bundle exec bridgetown build",
       "watch": "$1 --watch"
     }
-  ]
+  ],
+  ["@snowpack/plugin-webpack"]
 ]
 
 const installOptions = {
+  NODE_ENV: true
 }
 
 const devOptions = {
-    // Default port of bridgetown
-    port: 4000,
-    open: "none",
-    // Default output directory of Bridgetown
-    out: "output",
+  // Default port of bridgetown
+  port: 4000,
+  open: "none",
+  // Default output directory of Bridgetown
+  out: "output",
 }
 
 
 const buildOptions = {
+  clean: true
 }
-
-
 
 module.exports = {
   mount,
@@ -46,10 +43,4 @@ module.exports = {
   installOptions,
   devOptions,
   buildOptions
-  // Account for users using Docker
-  plugins: [
-    "@snowpack/plugin-dotenv",
-    "@snowpack/plugin-babel",
-    "@snowpack/plugin-parcel",
-  ],
 };
