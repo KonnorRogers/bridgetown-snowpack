@@ -15,6 +15,15 @@ bundle install && yarn install
 yarn start
 ```
 
+Alternatively, you can use an NPM package called [degit](https://www.npmjs.com/package/degit)
+
+```bash
+npx degit ParamagicDev/bridgetown-snowpack/templates/<template-name> <my-project-name>
+cd <my-project-name>
+bundle install && yarn install
+yarn start
+```
+
 And you should be up and running on `localhost:4000`
 
 Also make sure to check out [Bridgetown](https://bridgetownrb.com)
