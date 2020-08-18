@@ -47,7 +47,7 @@ def remove_webpack_packages
     "webpack-cli",
     "webpack-manifest-plugin"
   ]
-  run "yarn remove #{packages}"
+  run "yarn remove #{packages.join(' ')}"
 end
 
 remove_index_scss
