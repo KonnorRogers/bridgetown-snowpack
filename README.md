@@ -24,6 +24,7 @@ OPTS="--skip-yarn" bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/P
 cd <project>
 source docker.env
 docker-compose run --rm web bundle exec bridgetown apply https://github.com/ParamagicDev/bridgetown-snowpack/blob/master/automations/newsite.automation.rb
+docker-compose up
 ```
 
 And you should be up and running on `localhost:4000`
