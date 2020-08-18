@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "build": "pika build",
-    "release": "yarn version && yarn publish"
+    "release": "yarn publish"
   },
   "peerDependencies": {
     "@snowpack/plugin-webpack": "^2.0.4",
