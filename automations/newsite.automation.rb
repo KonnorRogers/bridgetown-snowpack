@@ -18,8 +18,38 @@ automations.each do |name, url|
   pull(name.to_s, url)
 end
 
-def remove_index_scss
-  FileUtils.rm_rf(File.join("frontend", "styles", "index.scss"))
+def remove_webpack_files
+  files = [
+    File.join("frontend", "styles", "index.scss"),
+    "sync.js",
+    "start.js",
+    "webpack.config.js"
+  ]
+  files.each { |file| FileUtils.rm_rf(file) }
+end
+
+def remove_webpack_packages
+  packages = [
+    "@babel/core",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-decorators",
+    "@babel/plugin-transform-runtime",
+    "@babel/preset-env",
+    "babel-loader",
+    "browser-sync",
+    "concurrently",
+    "css-loader",
+    "file-loader",
+    "mini-css-extract-plugin",
+    "node-sass",
+    "sass-loader",
+    "style-loader",
+    "webpack",
+    "webpack-cli",
+    "webpack-manifest-plugin"
+  ]
 end
 
 remove_index_scss
+remove_webpack_files
+remove_webpack_files

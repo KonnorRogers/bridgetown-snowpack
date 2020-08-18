@@ -34,7 +34,7 @@ def add_scripts
 end
 
 def add_packages
-  packages = "snowpack bridgetown-snowpack-base"
+  packages = "snowpack bridgetown-snowpack-base @snowpack/plugin-webpack"
   system("yarn add -D #{packages}")
 end
 
