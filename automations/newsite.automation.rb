@@ -10,7 +10,6 @@ automations = {
   Tailwind: "https://github.com/ParamagicDev/bridgetown-snowpack/blob/master/automations/tailwind.automation.rb",
   Stimulus: "https://github.com/ParamagicDev/bridgetown-automation-stimulus",
   Turbolinks: "https://github.com/ParamagicDev/bridgetown-automation-turbolinks",
-  Docker: "https://github.com/ParamagicDev/bridgetown-automation-docker-compose",
   Cypress: "https://github.com/ParamagicDev/bridgetown-automation-cypress",
 }
 
