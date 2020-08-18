@@ -35,5 +35,5 @@ Also make sure to check out [Bridgetown](https://bridgetownrb.com)
 
 ```bash
 cd packages/<package>
-yarn version && yarn build && yarn publish
+yarn publish
 ```
