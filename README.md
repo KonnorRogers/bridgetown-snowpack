@@ -23,7 +23,7 @@ bundle exec bridgetown apply https://github.com/ParamagicDev/bridgetown-snowpack
 
 cd <project>
 source docker.env
-docker-compose run --rm web https://github.com/ParamagicDev/bridgetown-snowpack/blob/master/automations/newsite.automation.rb
+docker-compose run --rm web bundle exec bridgetown apply https://github.com/ParamagicDev/bridgetown-snowpack/blob/master/automations/newsite.automation.rb
 ```
 
 And you should be up and running on `localhost:4000`
