@@ -47,8 +47,10 @@ def remove_webpack_packages
     "webpack-cli",
     "webpack-manifest-plugin"
   ]
+  
+  packages.each { |pkg| run "yarn remove #{pkg}" }
+rescue
 end
 
-remove_index_scss
 remove_webpack_files
 remove_webpack_packages
