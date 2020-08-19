@@ -22,6 +22,7 @@ bundle exec bridgetown apply https://github.com/ParamagicDev/bridgetown-snowpack
 OPTS="--skip-yarn" /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ParamagicDev/bridgetown-automation-docker-compose/master/installer.sh)" 
 
 cd <project>
+touch yarn.lock # because we skipped yarn
 source docker.env
 docker-compose run --rm web bundle exec bridgetown apply https://github.com/ParamagicDev/bridgetown-snowpack/blob/master/automations/newsite.automation.rb
 docker-compose up
