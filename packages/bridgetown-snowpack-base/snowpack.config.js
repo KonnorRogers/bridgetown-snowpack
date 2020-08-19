@@ -16,7 +16,7 @@ const plugins = [
       watch: "$1 --watch",
     },
   ],
-  ["@snowpack/plugin-webpack"],
+  ["@snowpack/plugin-webpack", {}],
 ];
 
 const installOptions = {
