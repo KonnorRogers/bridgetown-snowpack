@@ -1,5 +1,5 @@
 def add_packages
-  system("yarn add -D tailwindcss postcss-import")
+  system("yarn add -D tailwindcss postcss-import postcss")
 end
 
 def add_tailwind_config
