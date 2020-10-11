@@ -1,6 +1,6 @@
 const mount = {
   frontend: "/_frontend_",
-  output: "/",
+  src: "/",
 };
 
 const proxy = {
