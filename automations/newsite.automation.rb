@@ -14,6 +14,8 @@ automations = {
 }
 
 automations.each do |name, url|
+  next if (ENV["BTOWN_SNOWPACK"] === "false" && name == :Snowpack)
+  next if (ENV["BTOWN_CYPRESS"] === "false" && name == :Cypress)
   pull(name.to_s, url)
 end
 
